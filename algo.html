@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="algo.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm</title>
+    <link rel="icon" type="image/x-icon" href="resources\favicon.ico">
+</head>
+
+<body style="margin: 0;">
+ <div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="algo.html">Algorithm</a>
+  </div>
+
+
+  <div class="left">
+    <h1 style="color:rgb(34, 33, 33);font-family: monospace;text-decoration: underline;">LINEAR SEARCH</h1>
+    <div class="search_algo">
+      <p>    //Algorithm Linear Search<br>
+        //Input Array[0-n] and element to be searched<br>
+        //Output Index at which element is found<br><br>
+        for i from 1 to n{<br>
+          <div class="move_right">if arr[i] is x<br>
+            return i<br>
+        }<br></div>
+        <div style="text-align: left;padding-left: 8em;">return -1</div></p>
+        <img  src="https://camo.githubusercontent.com/5cfe6f9610708af79ad630ab47faf788eb600b6dfe543903492675780aecc11d/68747470733a2f2f7777772e7475746f7269616c73706f696e742e636f6d2f646174615f737472756374757265735f616c676f726974686d732f696d616765732f6c696e6561725f7365617263682e676966" style="padding-top:125px ;width:60%; height:30%">
+    </div>
+  </div>
+
+  <div class="right">
+  <h1 style="color:#9dede9;font-family: monospace;text-decoration: underline;">BINARY SEARCH</h1>
+    <div class="search_algo" style="color:#9dede9">
+      <p>
+        //Algorithm Recursive Binary Search<br>
+        //Input Array[0-n] and element to be searched<br>
+        //Output Index at which element is found<br><br>
+        if r >= l {<br>
+          int mid <- (l + r) / 2<br>
+          if arr[mid] is x<br>
+          <div class="move_right">return mid<br></div>    
+          <div style="text-align: left;padding-left: 8em;">if arr[mid] > x<br></div>
+          <div class="move_right"> return binarySearch(arr, l, mid - 1, x)<br></div>
+          <div style="text-align: left;padding-left: 8em;">return binarySearch(arr, mid + 1, r, x)<br>
+      }<br>
+      return -1</div>
+      </p>
+    </div>
+    <img  src="https://stackabuse.s3.amazonaws.com/media/binary-search-in-java-1.gif" style="padding-top:20px ;width:60%; height:30%">
+  </div>
+</body>
+</html>
